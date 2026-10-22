@@ -1,0 +1,12 @@
+include README.md LICENSE NOTICE.router NOTICE.openclaw
+recursive-include docs *.md
+recursive-include assets *.md *.svg *.png *.jpg *.webp *.pdf
+recursive-include examples *.json
+recursive-include tests *.py
+recursive-include tools *.py
+recursive-include mcp *.json *.js
+recursive-include openclaw_skills SKILL.md
+recursive-include src *.py *.mjs *.md
+global-exclude *.pyc *.pyo
+prune build
+prune dist

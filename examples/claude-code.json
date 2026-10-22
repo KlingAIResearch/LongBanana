@@ -1,0 +1,23 @@
+{
+  "dataset": "${DATASET_MANIFEST}",
+  "agent": "claude-code",
+  "workers": 10,
+  "strategy": "pipe",
+  "runtime": {
+    "manifest": "${RUNTIME_MANIFEST}",
+    "bwrap": "${BWRAP_PATH}",
+    "mcp_modules": "${MCP_MODULES}"
+  },
+  "model": {
+    "protocol": "anthropic",
+    "base_url": "https://api.anthropic.com/v1",
+    "model": "${ANTHROPIC_MODEL}",
+    "api_key_env": "ANTHROPIC_API_KEY"
+  },
+  "image": {
+    "protocol": "gemini",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta",
+    "model": "gemini-3.1-flash-image",
+    "api_key_env": "GEMINI_API_KEY"
+  }
+}

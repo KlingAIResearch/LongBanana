@@ -1,0 +1,28 @@
+{
+  "dataset": "${DATASET_MANIFEST}",
+  "agent": "codex",
+  "workers": 10,
+  "timeout": 3600,
+  "tool_timeout": 1800,
+  "api_timeout": 300,
+  "model_concurrency": 30,
+  "image_concurrency": 10,
+  "proc_mode": "minimal",
+  "runtime": {
+    "manifest": "${RUNTIME_MANIFEST}",
+    "bwrap": "${BWRAP_PATH}",
+    "mcp_modules": "${MCP_MODULES}"
+  },
+  "model": {
+    "protocol": "responses",
+    "base_url": "https://api.openai.com/v1",
+    "model": "${OPENAI_MODEL}",
+    "api_key_env": "OPENAI_API_KEY"
+  },
+  "image": {
+    "protocol": "gemini",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta",
+    "model": "gemini-3.1-flash-image",
+    "api_key_env": "GEMINI_API_KEY"
+  }
+}

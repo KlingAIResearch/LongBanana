@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "longbanana"
+version = "0.1.0"
+description = "Sandboxed multi-reference image generation and check-level evaluation"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = ["requests>=2.31,<3", "Pillow>=10,<13"]
+
+[project.optional-dependencies]
+vertex = ["google-auth>=2.29,<3"]
+
+[project.scripts]
+longbanana = "longbanana.__main__:main"
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE.router", "NOTICE.openclaw"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"longbanana.agents" = ["*.mjs", "*.md"]
+
+[tool.setuptools.data-files]
+"share/longbanana/mcp/image_gen" = ["mcp/image_gen/package.json", "mcp/image_gen/package-lock.json"]
+"share/longbanana/mcp/image_gen/dist" = ["mcp/image_gen/dist/*.js"]
+"share/longbanana" = ["LICENSE", "NOTICE.router", "NOTICE.openclaw"]
+"share/longbanana/docs/legacy" = ["docs/legacy/gemini_image_for_agents.md"]
+"share/longbanana/openclaw_skills/longbanana-detection-judge" = ["openclaw_skills/longbanana-detection-judge/SKILL.md"]
+"share/longbanana/openclaw_skills/longbanana-identity-judge" = ["openclaw_skills/longbanana-identity-judge/SKILL.md"]
+"share/longbanana/openclaw_skills/longbanana-judge-orchestrator" = ["openclaw_skills/longbanana-judge-orchestrator/SKILL.md"]
+"share/longbanana/openclaw_skills/longbanana-layout-judge" = ["openclaw_skills/longbanana-layout-judge/SKILL.md"]
+"share/longbanana/openclaw_skills/longbanana-ocr-judge" = ["openclaw_skills/longbanana-ocr-judge/SKILL.md"]
