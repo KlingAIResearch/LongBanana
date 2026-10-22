@@ -14,10 +14,32 @@ Never force-update an existing remote branch.
 
 Hugging Face hosts the two independent dataset archives, `open_v1.tar.zst` and
 `open_v1p5.tar.zst`, their SHA-256 checksums, and the dataset card. Do not place
-dataset images, private migration evidence, or experiment outputs in Git history.
+dataset archives, private migration evidence, or raw experiment outputs in the
+code branch.
 
 Preparation is local only. Creating remote branches, uploading artifacts, and
 changing repository visibility require a separate publication instruction.
+
+## Project website
+
+The same repository hosts the [Project Page](https://klingairesearch.github.io/LongBanana/)
+and [Gallery](https://klingairesearch.github.io/LongBanana/gallery/) on an independent
+`gh-pages` branch. The `main` branch remains the default code branch.
+In **Settings → Pages**, select **Deploy from a branch**, `gh-pages`, and `/ (root)`.
+Keep `.nojekyll` at the website root so GitHub serves the static files directly.
+
+Maintain the website in a separate checkout:
+
+```bash
+git clone --branch gh-pages --single-branch https://github.com/KlingAIResearch/LongBanana.git longbanana-site
+cd longbanana-site
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Use relative asset and navigation URLs so the site works beneath `/LongBanana/`.
+The Gallery uses `gallery/visual-data/cases.json` and the corresponding public
+preview images. Preserve attribution notices, check links and image availability,
+and publish website-only updates to `gh-pages`, not `main`.
 
 ## Public configuration
 

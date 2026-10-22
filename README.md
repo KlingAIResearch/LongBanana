@@ -3,8 +3,8 @@
 ## An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis
 
 <p align="center">
-  <a href="https://hooccee.github.io/LongBanana-v2/"><img src="assets/badge-project-page.svg" alt="Project Page" height="42"></a>
-  <a href="https://hooccee.github.io/LongBanana-v2/gallery/"><img src="assets/badge-gallery.svg" alt="Gallery" height="42"></a>
+  <a href="https://klingairesearch.github.io/LongBanana/"><img src="assets/badge-project-page.svg" alt="Project Page" height="42"></a>
+  <a href="https://klingairesearch.github.io/LongBanana/gallery/"><img src="assets/badge-gallery.svg" alt="Gallery" height="42"></a>
   <a href="#paper-and-citation"><img src="assets/badge-arxiv.svg" alt="arXiv Paper — Coming soon" height="42"></a>
   <a href="https://huggingface.co/datasets/Kwai-Kolors/LongBanana"><img src="assets/badge-dataset.svg" alt="Hugging Face Dataset" height="42"></a>
 </p>
@@ -214,7 +214,7 @@ full license and attribution information.
 
 ## Paper and Citation
 
-**arXiv Paper: Coming soon.** Visit the [Project Page](https://hooccee.github.io/LongBanana-v2/)
+**arXiv Paper: Coming soon.** Visit the [Project Page](https://klingairesearch.github.io/LongBanana/)
 for the research overview. Please cite LongBanana when using the benchmark:
 
 ```bibtex
