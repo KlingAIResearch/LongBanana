@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Case Gallery — LongBanana</title>
+  <meta name="description" content="Explore all 90 LongBanana benchmark cases, synthesis instructions, simulated targets, and complete reference image sets.">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="../assets/favicon.svg?v=20261015">
+  <link rel="stylesheet" href="../style.css?v=3-20261014"><link rel="stylesheet" href="gallery.css?v=3-20261014">
+  <script src="gallery.js?v=3-20261014" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#cases">Skip to cases</a>
+  <header class="site-header"><nav class="nav-shell" aria-label="Primary navigation"><a class="brand" href="../"><img src="../assets/longbanan_doge.png" alt=""><span>LongBanana</span></a><div class="nav-links"><a href="../">Home</a><a href="../#benchmark">Benchmark</a><a href="../#contributors">Contributors</a><a href="../#leaderboard">Leaderboard</a><a href="./" aria-current="page">Gallery</a><a class="nav-cta" href="https://github.com/KlingAIResearch/LongBanana" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div></nav></header>
+  <main>
+    <section class="gallery-hero"><p class="eyebrow">The LongBanana benchmark</p><h1 class="title-lockup gallery-title"><img src="../assets/gallery-polaroid-transparent.png" alt="" width="115" height="90"><span>Case Gallery</span></h1><p>Explore the references. Read the instruction.<br>See what it takes to get every detail right.</p><div class="gallery-hero-actions"><a class="button button-primary" href="#cases">Explore 90 cases <span aria-hidden="true">↓</span></a><a class="button" href="../#leaderboard">View leaderboard <span aria-hidden="true">↗</span></a></div><div class="gallery-stats"><span><b>90</b> cases</span><span><b>9</b> categories</span><span><b>32</b> references / case</span></div></section>
+    <section class="gallery-explorer" id="cases" aria-label="Browse benchmark cases">
+      <div class="suite-tabs" role="tablist" aria-label="Filter by benchmark suite"><button type="button" data-suite="all" role="tab" aria-selected="true">All cases <span>90</span></button><button type="button" data-suite="composition" role="tab" aria-selected="false">Scene Composition <span>30</span></button><button type="button" data-suite="appearance" role="tab" aria-selected="false">Visual Appearance <span>30</span></button><button type="button" data-suite="reasoning" role="tab" aria-selected="false">Reference Reasoning <span>30</span></button></div>
+      <div class="explorer-tools"><label class="gallery-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search cases</span><input id="case-search" type="search" placeholder="Search by case ID, category, or instruction…" autocomplete="off"></label><div class="result-count" aria-live="polite"><b id="case-count">90</b> cases <button type="button" id="reset-filters" hidden>Clear filters ×</button></div></div>
+      <div class="category-filters" id="category-filters" aria-label="Filter by capability category"></div>
+      <div class="gallery-status" id="gallery-status" role="status"><p>Loading the case index…</p></div>
+      <div class="case-grid" id="case-grid" hidden></div>
+      <div class="load-more-wrap"><p id="shown-count"></p><button type="button" class="button" id="load-more" hidden>Show more cases <span aria-hidden="true">↓</span></button></div>
+    </section>
+    <section class="gallery-help"><div><p class="eyebrow">Reading a case</p><h2>One instruction. <br>A complete visual context.</h2></div><div><p>Each case includes its full synthesis instruction, a simulated target, and 32 reference images. Targets illustrate the intended scene; they are not a model leaderboard result.</p><a href="../#evaluation">Learn how outputs are evaluated <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div><a class="brand" href="../"><img src="../assets/longbanan_doge.png" alt=""><span>LongBanana</span></a><p>An expert-verified benchmark for long-context<br>multi-reference image synthesis.</p></div><div class="footer-links"><a href="../">Project page</a><a href="../#leaderboard">Leaderboard</a><a href="https://github.com/KlingAIResearch/LongBanana" target="_blank" rel="noopener">Code ↗</a><a href="https://huggingface.co/datasets/Kwai-Kolors/LongBanana" target="_blank" rel="noopener">Dataset ↗</a></div><p class="footer-bottom">LongBanana · Case Gallery</p></footer>
+  <dialog id="case-dialog" class="case-dialog" aria-labelledby="case-title"></dialog>
+  <dialog id="target-dialog" class="target-dialog" aria-label="Simulated target preview"></dialog>
+</body>
+</html>
