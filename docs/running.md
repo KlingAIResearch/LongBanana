@@ -41,6 +41,10 @@ Both agents retain their native image-reading tools.
 
 ### OpenClaw runtime
 
+Use the included `openclaw-runtime/` directory. The [runtime guide](runtimes.md)
+provides checksum verification and locked dependency setup commands; no separate
+OpenClaw repository is needed.
+
 `examples/openclaw.json` also requires `OPENCLAW_RUNTIME` (the directory containing
 `openclaw.mjs`, `package.json`, and `dist/`), `OPENCLAW_MODULES` (installed Node
 dependencies), and `PYTHON_RUNTIME` (an existing Python executable). npm and pnpm

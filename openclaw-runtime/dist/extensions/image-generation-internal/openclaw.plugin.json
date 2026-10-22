@@ -1,0 +1,40 @@
+{
+  "id": "image-generation-internal",
+  "enabledByDefault": true,
+  "providers": [
+    "image_generation"
+  ],
+  "providerAuthEnvVars": {
+    "image_generation": [
+      "WQ_API_KEY"
+    ]
+  },
+  "providerAuthChoices": [
+    {
+      "provider": "image_generation",
+      "method": "api-key",
+      "choiceId": "image-generation-api-key",
+      "choiceLabel": "Image Generation API key",
+      "groupId": "image_generation",
+      "groupLabel": "Image Generation",
+      "groupHint": "Internal image generation",
+      "onboardingScopes": [
+        "image-generation"
+      ],
+      "optionKey": "imageGenerationApiKey",
+      "cliFlag": "--image-generation-api-key",
+      "cliOption": "--image-generation-api-key <key>",
+      "cliDescription": "Image Generation API key"
+    }
+  ],
+  "contracts": {
+    "imageGenerationProviders": [
+      "image_generation"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

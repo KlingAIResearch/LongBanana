@@ -1,0 +1,12 @@
+type FacadeModule = typeof import("@openclaw/matrix/api.js");
+export declare const findMatrixAccountEntry: FacadeModule["findMatrixAccountEntry"];
+export declare const getMatrixScopedEnvVarNames: FacadeModule["getMatrixScopedEnvVarNames"];
+export declare const requiresExplicitMatrixDefaultAccount: FacadeModule["requiresExplicitMatrixDefaultAccount"];
+export declare const resolveConfiguredMatrixAccountIds: FacadeModule["resolveConfiguredMatrixAccountIds"];
+export declare const resolveMatrixAccountStorageRoot: FacadeModule["resolveMatrixAccountStorageRoot"];
+export declare const resolveMatrixChannelConfig: FacadeModule["resolveMatrixChannelConfig"];
+export declare const resolveMatrixCredentialsDir: FacadeModule["resolveMatrixCredentialsDir"];
+export declare const resolveMatrixCredentialsPath: FacadeModule["resolveMatrixCredentialsPath"];
+export declare const resolveMatrixDefaultOrOnlyAccountId: FacadeModule["resolveMatrixDefaultOrOnlyAccountId"];
+export declare const resolveMatrixLegacyFlatStoragePaths: FacadeModule["resolveMatrixLegacyFlatStoragePaths"];
+export {};

@@ -1,7 +1,9 @@
 # Release Packaging
 
 The published project is self-contained and written for users configuring their
-own machines and API accounts. Source, datasets, and runtimes are separate artifacts.
+own machines and API accounts. The Git checkout includes the pinned OpenClaw
+runtime and its checksum manifest. Datasets, Node dependencies, and the other
+agent CLIs are distributed separately.
 
 ## Publication destinations
 

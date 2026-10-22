@@ -114,8 +114,9 @@ same pipeline. Select a release with `DATASET_MANIFEST`.
 ## Installation and Configuration
 
 Use **Linux, Python 3.11+, Node.js, and Bubblewrap**, plus a supported agent runtime.
-Agent runtimes are provisioned separately; see the [runtime guide](docs/runtimes.md)
-for pinned versions and the OpenClaw build.
+The fixed OpenClaw build is included in `openclaw-runtime/`; Codex and Claude Code
+are obtained separately. See the [runtime guide](docs/runtimes.md) for dependency
+setup and pinned versions. No private repository is required.
 
 The `main` branch contains the sandboxed implementation.
 

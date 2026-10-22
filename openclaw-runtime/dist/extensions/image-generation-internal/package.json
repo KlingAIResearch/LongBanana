@@ -1,0 +1,12 @@
+{
+  "name": "@openclaw/image-generation-internal",
+  "version": "2026.4.16",
+  "private": true,
+  "description": "OpenClaw internal image generation provider plugin",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ]
+  }
+}
