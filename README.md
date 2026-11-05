@@ -6,7 +6,7 @@
   <a href="https://klingairesearch.github.io/LongBanana/"><img src="assets/badge-project-page.svg" alt="Project Page" height="42"></a>
   <a href="https://klingairesearch.github.io/LongBanana/gallery/"><img src="assets/badge-gallery.svg" alt="Gallery" height="42"></a>
   <a href="https://arxiv.org/abs/2611.06856"><img src="assets/badge-arxiv.svg" alt="arXiv Paper" height="42"></a>
-  <a href="https://huggingface.co/datasets/Kwai-Kolors/LongBanana"><img src="assets/badge-dataset.svg" alt="Hugging Face Dataset" height="42"></a>
+  <a href="https://huggingface.co/datasets/KlingTeam/LongBanana"><img src="assets/badge-dataset.svg" alt="Hugging Face Dataset" height="42"></a>
 </p>
 
 **90 tasks per release · 9 categories · 32 reference images per task · graph-grounded evaluation**
@@ -98,7 +98,7 @@ for another dataset release or execution profile.
 
 ## Datasets
 
-Download the datasets from [Hugging Face](https://huggingface.co/datasets/Kwai-Kolors/LongBanana).
+Download the datasets from [Hugging Face](https://huggingface.co/datasets/KlingTeam/LongBanana).
 Dataset archives are distributed separately from code.
 
 | Release | Cases | References | Evaluation checks |
